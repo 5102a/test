@@ -20,7 +20,7 @@
     "git": "git diff master... --name-only -- \"*.ts\" \"*.tsx\" \"*.js\" \"*.jsx\"",
     "eslint": "eslint --cache --fix --ext .ts src/",
     "tsc": "tsc --noEmit --strictNullChecks src/test1.ts",
-    "lint": "pnpm ./lint.sh"
+    "lint": "pnpm ./lint.sh \"*.ts\" \"*.tsx\""
   },
   "browserslist": {
     "production": [

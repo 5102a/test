@@ -1,0 +1,6 @@
+{
+  "editor.suggest.showIcons": false,
+  "files.exclude": {
+    "**/.git": false
+  }
+}
