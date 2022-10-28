@@ -17,13 +17,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "eslint": "eslint  src/"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "git": "git diff master... --name-only -- \"*.ts\" \"*.tsx\" \"*.js\" \"*.jsx\"",
+    "eslint": "eslint --cache --fix --ext .ts src/",
+    "tsc": "tsc --noEmit --strictNullChecks src/test1.ts",
+    "lint": "pnpm ./lint.sh"
   },
   "browserslist": {
     "production": [
@@ -38,7 +35,8 @@
     ]
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.33.1",
+    "@typescript-eslint/parser": "^5.41.0",
     "eslint": "^8.0.1",
     "eslint-config-standard-with-typescript": "^23.0.0",
     "eslint-plugin-import": "^2.25.2",
